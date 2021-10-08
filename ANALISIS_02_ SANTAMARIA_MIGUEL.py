@@ -177,7 +177,7 @@ class Quaerit:
         # Ordenar reporte de mayor a menor
         reporte = dict(sorted(reporte.items(), key=lambda item: item[1], reverse=True))
         
-        print("Reporte Trasnportes (valor total en USD)")
+        print("Reporte Transportes (valor total en USD)")
         self.imprimirDict(reporte)
         
         """ Plot """
@@ -185,7 +185,7 @@ class Quaerit:
         ax.barh(*zip(*reporte.items()))
         ax.invert_yaxis()
         ax.set_ylabel('Valor acumulado en 10 mil millones de USD')
-        ax.set_xlabel('Tipo de trasporte')
+        ax.set_xlabel('Tipo de transporte')
         ax.set_title('Valor acumulado por transportes')
                      
         plt.tight_layout()
